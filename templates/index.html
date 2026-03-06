@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a href="#" class="nav-logo">Dave<span>.</span>Di</a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg-text">WORK</div>
+    <div class="hero-tag">Available for hire</div>
+    <h1>Building <em>things</em><br>that matter.</h1>
+    <p class="hero-sub">Developer & designer crafting clean, purposeful digital experiences. Based anywhere, working everywhere.</p>
+    <div class="hero-cta">
+      <a href="#projects" class="btn btn-primary">View Projects</a>
+      <a href="#contact" class="btn btn-outline">Get in Touch</a>
+    </div>
+    <div class="hero-scroll">
+      <span class="scroll-line"></span>
+      Scroll
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div>
+      <div class="section-label">01 — About</div>
+      <h2 class="about-heading">Crafting <em>digital</em><br>experiences.</h2>
+    </div>
+    <div>
+      <p class="about-text">I'm a developer who cares deeply about the intersection of design and engineering. I build fast, accessible, and beautiful web applications — from concept to deployment.</p>
+      <div class="skills-grid">
+        <div class="skill-tag">Python / Flask</div>
+        <div class="skill-tag">HTML / CSS</div>
+        <div class="skill-tag">JavaScript</div>
+        <div class="skill-tag">React</div>
+        <div class="skill-tag">SQL / Databases</div>
+        <div class="skill-tag">Git / GitHub</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="projects" id="projects">
+    <div class="projects-header">
+      <div>
+        <div class="section-label">02 — Work</div>
+        <h2 class="projects-heading">Selected<br>Projects.</h2>
+      </div>
+    </div>
+
+    <div class="projects-grid">
+
+      <!-- Featured -->
+      <div class="project-card featured">
+        <div class="featured-visual">
+          <div class="featured-visual-inner">01</div>
+        </div>
+        <div>
+          <div class="project-number">01 — Featured</div>
+          <h3 class="project-title">Portfolio Dashboard</h3>
+          <p class="project-desc">A full-stack web app with real-time data visualization, user authentication, and a clean admin interface built with Flask and vanilla JS.</p>
+          <div class="project-tags">
+            <span class="tag">Python</span>
+            <span class="tag">Flask</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">SQLite</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="project-link">Live Demo</a>
+            <a href="#" class="project-link">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="project-card">
+        <div class="project-number">02</div>
+        <h3 class="project-title">Weather App</h3>
+        <p class="project-desc">Fetches live weather data from an API and displays it in a minimal, beautiful interface.</p>
+        <div class="project-tags">
+          <span class="tag">Python</span>
+          <span class="tag">API</span>
+          <span class="tag">HTML/CSS</span>
+        </div>
+        <div class="project-links">
+          <a href="#" class="project-link">Live Demo</a>
+          <a href="#" class="project-link">GitHub</a>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="project-card">
+        <div class="project-number">03</div>
+        <h3 class="project-title">Task Manager</h3>
+        <p class="project-desc">A productivity tool with drag-and-drop task management and persistent local storage.</p>
+        <div class="project-tags">
+          <span class="tag">JavaScript</span>
+          <span class="tag">CSS</span>
+          <span class="tag">LocalStorage</span>
+        </div>
+        <div class="project-links">
+          <a href="#" class="project-link">Live Demo</a>
+          <a href="#" class="project-link">GitHub</a>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="project-card">
+        <div class="project-number">04</div>
+        <h3 class="project-title">Blog Platform</h3>
+        <p class="project-desc">A lightweight blogging platform with markdown support, tags, and an RSS feed.</p>
+        <div class="project-tags">
+          <span class="tag">Flask</span>
+          <span class="tag">Markdown</span>
+          <span class="tag">SQLite</span>
+        </div>
+        <div class="project-links">
+          <a href="#" class="project-link">Live Demo</a>
+          <a href="#" class="project-link">GitHub</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="section-label" style="justify-content:center;">03 — Contact</div>
+    <h2 class="contact-heading">Let's work<br><em>together.</em></h2>
+    <br>
+    <a href="mailto:hello@jdoe.dev" class="contact-email">hello@jdoe.dev</a>
+    <br><br>
+    <div class="social-links">
+      <a href="#" class="social-link">GitHub</a>
+      <a href="#" class="social-link">LinkedIn</a>
+      <a href="#" class="social-link">Twitter</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <span>© 2026 Jon Doe</span>
+    <span>Built with Flask & CSS</span>
+  </footer>
+
+</body>
+</html>
